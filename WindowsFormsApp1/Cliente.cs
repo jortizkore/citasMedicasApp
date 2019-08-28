@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
         public DateTime FechaNacimiento { get; set; }
         public string Direccion { get; set; }
 
-        bool Guardar()
+        public bool Guardar()
         {
             db = new DBConexion();
             var query = "Insert into cliente (NoCedula,Nombre,Apellido,NoCelular,Email,FechaNac,Direccion)" +
@@ -30,30 +30,48 @@ namespace WindowsFormsApp1
             }
             return false;
         }
-        bool Editar()
+
+        public bool Editar()
         {
             db = new DBConexion();
             var query = $"UPDATE cliente set Nombre ='{Nombre}'" +
-                        $", Apellido'{Apellido}'" +
-                        $", NoCelular='{NoCelular}'," +
-                        $" Email='{Email}'," +
+                        $", Apellido = '{Apellido}'" +
+                        $", NoCelular = '{NoCelular}'," +
+                        $" Email = '{Email}'," +
                         $" FechaNac = '{FechaNacimiento}'," +
-                        $" Direccion = '{Direccion}')" +
-                        $"WHERE NoCelula = '{NoCedula}'";
+                        $" Direccion = '{Direccion}'" +
+                        $" WHERE NoCedula = '{NoCedula}'";
             if (db.ExcecuteQuery(query))
             {
                 return true;
             }
             return false;
         }
-        bool Llenar()
+
+        public bool Eliminar()
+        {
+            db = new DBConexion();
+            var query = "DELTE FROM cliente" +
+                           $" WHERE NoCedula='{NoCedula}'";
+            if (db.ExcecuteQuery(query))
+            {
+                return true;
+            }
+            return false;
+        }
+     public DataTable TraerClientesTabla()
+        {
+            db = new DBConexion();
+            var query = "Select * from Cliente";
+            return db.BringData(query);
+        }
+        public bool Llenar()
         {
             db = new DBConexion();
             var query = $"SELECT * FROM cliente WHERE NoCedula='{NoCedula}'";
             DataTable data = db.BringData(query);
             if (data.Rows.Count > 0)
             {
-                NoCedula = data.Rows[0]["NoCedula"].ToString();
                 Nombre = data.Rows[0]["Nombre"].ToString();
                 Apellido = data.Rows[0]["Apellido"].ToString();
                 NoCelular = data.Rows[0]["NoCelular"].ToString();

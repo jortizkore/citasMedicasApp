@@ -28,5 +28,11 @@ namespace WindowsFormsApp1
             FrmMotivoCitas frm = new FrmMotivoCitas();
             frm.ShowDialog();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMantenimientoCliente frm = new FrmMantenimientoCliente();
+            frm.ShowDialog();
+        }
     }
 }

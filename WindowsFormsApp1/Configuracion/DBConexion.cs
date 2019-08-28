@@ -97,6 +97,9 @@ namespace WindowsFormsApp1.Configuracion
             }
         }
 
+
+        // HERE Hacer un try en cada ejecusion en la base de datos para con el finally desconectar la app
+
         public bool CorrerSP(string sp)
         {
             this.command.CommandType = CommandType.StoredProcedure;
@@ -116,6 +119,7 @@ namespace WindowsFormsApp1.Configuracion
             if (this.connect())
             {
                 this.command.ExecuteNonQuery();
+                this.Disconnect();
                 return true;
             }
             return false;
