@@ -56,6 +56,12 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimientos\FrmMantenimientoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmMantenimientoCliente.Designer.cs">
+      <DependentUpon>FrmMantenimientoCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\FrmMotivoCitas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frmmantenimientoCliente.resx">
+      <DependentUpon>FrmMantenimientoCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\FrmMotivoCitas.resx">
       <DependentUpon>FrmMotivoCitas.cs</DependentUpon>

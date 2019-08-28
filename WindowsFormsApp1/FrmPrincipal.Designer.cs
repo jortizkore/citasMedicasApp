@@ -31,9 +31,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.motivoCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.motivoCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +63,14 @@
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            // 
+            // motivoCitasToolStripMenuItem
+            // 
+            this.motivoCitasToolStripMenuItem.Name = "motivoCitasToolStripMenuItem";
+            this.motivoCitasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.motivoCitasToolStripMenuItem.Text = "Motivo citas";
+            this.motivoCitasToolStripMenuItem.Click += new System.EventHandler(this.motivoCitasToolStripMenuItem_Click);
             // 
             // citasToolStripMenuItem
             // 
@@ -75,15 +83,8 @@
             // verCitasToolStripMenuItem
             // 
             this.verCitasToolStripMenuItem.Name = "verCitasToolStripMenuItem";
-            this.verCitasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verCitasToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.verCitasToolStripMenuItem.Text = "Ver citas";
-            // 
-            // motivoCitasToolStripMenuItem
-            // 
-            this.motivoCitasToolStripMenuItem.Name = "motivoCitasToolStripMenuItem";
-            this.motivoCitasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.motivoCitasToolStripMenuItem.Text = "Motivo citas";
-            this.motivoCitasToolStripMenuItem.Click += new System.EventHandler(this.motivoCitasToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
