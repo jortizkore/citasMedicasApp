@@ -107,8 +107,11 @@ namespace WindowsFormsApp1.Configuracion
             if (this.connect())
             {
                 this.command.ExecuteNonQuery();
+                Disconnect();
                 return true;
+                
             }
+            this.Disconnect();
             return false;
         }
 
@@ -122,6 +125,7 @@ namespace WindowsFormsApp1.Configuracion
                 this.Disconnect();
                 return true;
             }
+            this.Disconnect();
             return false;
         }
 

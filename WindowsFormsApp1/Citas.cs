@@ -16,55 +16,44 @@ namespace WindowsFormsApp1
         public int MotivoCita { get; set; }
         public string Comentario { get; set; }
 
-        bool Guardar()
+        public bool Guardar()
         {
             db = new DBConexion();
             var query = "INSERT INTO citas (NoCedula, FechaCita, MotivoCita, ComentarioMedico)" +
-                        $" VALUES ('{NoCedula}','{FechaCita}',{MotivoCita},'{Comentario}')";
-            if (db.ExcecuteQuery(query))
-            {
-                MessageManager.AlerMessage("se guardo correctamente");
-            }
-            else
-            {
-                MessageManager.AlerMessage("");
-
-            }
-
-            return true;
+                        $" VALUES ('{NoCedula}','{FechaCita.Date}',{MotivoCita},'{Comentario}')";
+            
+            return db.ExcecuteQuery(query);
         }
 
-        bool Editar()
+        public bool Editar()
         {
             db = new DBConexion();
             var query = $"update citas set " +
-                $" FechaCitas = '{FechaCita}' , MotivoCita = {MotivoCita} , ComentarioMedico = '{Comentario}' " +
-                $" where NoCedula = '{NoCedula}'";
-            if (db.ExcecuteQuery(query))
-            {
-                MessageManager.AlerMessage(" correctamente");
-            }
-            else
-            {
-                MessageManager.AlerMessage("");
-
-            }
-
-            return true;
+                $" FechaCita = '{FechaCita.Date}', ComentarioMedico = '{Comentario}' " +
+                $" where NoCedula = '{NoCedula}' AND MotivoCita = {MotivoCita} ";
+            
+            return db.ExcecuteQuery(query);
         }
-        bool Eliminar()
+        public bool Eliminar()
         {
             db = new DBConexion();
             var query = $"DELECTE FROM citas " +
                 $"where NoCedula = '{NoCedula}' and FechaCita = '{FechaCita}'";
-            return true;
+            return db.ExcecuteQuery(query);
         }
-        
-        DataTable TraerCitas()
+
+        public DataTable TraerCitas()
         {
-            DataTable datos = new DataTable();
             db = new DBConexion();
-            return datos;
+            var query = "Select * from citas";
+            return db.BringData(query);
+        }
+
+        public DataTable TraerCitas(string cedula)
+        {
+            db = new DBConexion();
+            var query = $"Select * from citas WHERE cliente='{cedula}'";
+            return db.BringData(query);
         }
     }
 }

@@ -24,14 +24,14 @@ namespace WindowsFormsApp1.Mantenimientos
         {
             cli = new Cliente();
             PasarDatosCliente();
-            if (cli.Guardar())
+            if (ClienteValido() && cli.Guardar())
             {
                 MessageManager.InfoMessage("Cliente guardado con éxito");
                 Refrescar();
             }
             else
             {
-                MessageManager.InfoMessage("No pudo completarse el registro");
+                MessageManager.InfoMessage("No pudo completarse el registro, \n verifique si todos los campos estan llenos");
             }
         }
 
@@ -87,6 +87,15 @@ namespace WindowsFormsApp1.Mantenimientos
         void IrAlTab(int tab)
         {
             tabControl1.SelectTab(tab);
+        }
+
+        bool ClienteValido()
+        {
+            var esValido = TxtNoCedula.Text != "" &&
+                            TxtNombreCliente.Text != "" &&
+                            TxtApellidoCliente.Text != "" &&
+                            TxtEmailCliente.Text != "";
+            return esValido;
         }
 
         private void FrmMantenimientoCliente_Load(object sender, EventArgs e)

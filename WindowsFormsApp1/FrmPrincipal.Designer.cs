@@ -61,14 +61,14 @@
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // motivoCitasToolStripMenuItem
             // 
             this.motivoCitasToolStripMenuItem.Name = "motivoCitasToolStripMenuItem";
-            this.motivoCitasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.motivoCitasToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.motivoCitasToolStripMenuItem.Text = "Motivo citas";
             this.motivoCitasToolStripMenuItem.Click += new System.EventHandler(this.motivoCitasToolStripMenuItem_Click);
             // 
@@ -83,8 +83,9 @@
             // verCitasToolStripMenuItem
             // 
             this.verCitasToolStripMenuItem.Name = "verCitasToolStripMenuItem";
-            this.verCitasToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.verCitasToolStripMenuItem.Text = "Ver citas";
+            this.verCitasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verCitasToolStripMenuItem.Text = "Crear citas";
+            this.verCitasToolStripMenuItem.Click += new System.EventHandler(this.verCitasToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 

@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Citas.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Configuracion\DBConexion.cs" />
     <Compile Include="Configuracion\MessageManager.cs" />
@@ -55,6 +56,12 @@
     </Compile>
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\frmCrearCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frmCrearCitas.Designer.cs">
+      <DependentUpon>frmCrearCitas.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\FrmMantenimientoCliente.cs">
       <SubType>Form</SubType>
@@ -68,10 +75,14 @@
     <Compile Include="Mantenimientos\FrmMotivoCitas.Designer.cs">
       <DependentUpon>FrmMotivoCitas.cs</DependentUpon>
     </Compile>
+    <Compile Include="MotivoCita.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frmCrearCitas.resx">
+      <DependentUpon>frmCrearCitas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmmantenimientoCliente.resx">
       <DependentUpon>FrmMantenimientoCliente.cs</DependentUpon>

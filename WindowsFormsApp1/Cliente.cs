@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
         {
             db = new DBConexion();
             var query = "Insert into cliente (NoCedula,Nombre,Apellido,NoCelular,Email,FechaNac,Direccion)" +
-                           $" VALUES ('{NoCedula}','{Nombre}','{Apellido}','{NoCelular}','{Email}','{FechaNacimiento}','{Direccion}')";
+                           $" VALUES ('{NoCedula}','{Nombre}','{Apellido}','{NoCelular}','{Email}','{FechaNacimiento.Date}','{Direccion}')";
             if (db.ExcecuteQuery(query))
             {
                 return true;

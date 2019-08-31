@@ -25,3 +25,4 @@ D:\Projects\Citas Medicas\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.Cor
 D:\Projects\Citas Medicas\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 D:\Projects\Citas Medicas\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\Projects\Citas Medicas\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Projects\Citas Medicas\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Mantenimientos.frmCrearCitas.resources

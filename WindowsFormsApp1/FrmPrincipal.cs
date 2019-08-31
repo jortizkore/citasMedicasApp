@@ -34,5 +34,11 @@ namespace WindowsFormsApp1
             FrmMantenimientoCliente frm = new FrmMantenimientoCliente();
             frm.ShowDialog();
         }
+
+        private void verCitasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCrearCitas frm = new frmCrearCitas();
+            frm.ShowDialog();
+        }
     }
 }
