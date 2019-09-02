@@ -41,5 +41,10 @@ namespace WindowsFormsApp1
             frmCrearCitas frm = new frmCrearCitas();
             frm.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
