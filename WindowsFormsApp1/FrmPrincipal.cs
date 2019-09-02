@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.email;
 using WindowsFormsApp1.Mantenimientos;
 
 namespace WindowsFormsApp1
