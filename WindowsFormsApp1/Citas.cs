@@ -8,7 +8,7 @@ using WindowsFormsApp1.Configuracion;
 
 namespace WindowsFormsApp1
 {
-    class Citas
+    public class Citas
     {
         DBConexion db;
         public string NoCedula { get; set; }

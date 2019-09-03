@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Configuracion
 {
-    class DBConexion
+    public class DBConexion
     {
         private const string server = @"(LocalDB)\MSSQLLocalDB";
         private const string database = "citas_medicas_db";
