@@ -26,3 +26,18 @@ D:\Projects\Citas Medicas\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.Cop
 D:\Projects\Citas Medicas\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\Projects\Citas Medicas\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 D:\Projects\Citas Medicas\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Mantenimientos.frmCrearCitas.resources
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmPrincipal.resources
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Mantenimientos.frmCrearCitas.resources
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Mantenimientos.FrmMantenimientoCliente.resources
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Mantenimientos.FrmMotivoCitas.resources
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jortiz\OneDrive - Kore Wireless\Desktop\Doc\Projects\CitasMedicasApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete

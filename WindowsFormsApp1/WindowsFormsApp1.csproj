@@ -51,6 +51,7 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="Configuracion\DBConexion.cs" />
     <Compile Include="Configuracion\MessageManager.cs" />
+    <Compile Include="email\EmailSender.cs" />
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
