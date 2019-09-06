@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp1.email;
 using WindowsFormsApp1.Mantenimientos;
 
 namespace WindowsFormsApp1
@@ -36,15 +35,15 @@ namespace WindowsFormsApp1
             frm.ShowDialog();
         }
 
-        private void verCitasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmCrearCitas frm = new frmCrearCitas();
-            frm.ShowDialog();
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void citasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCrearCitas frm = new frmCrearCitas();
+            frm.ShowDialog();
         }
     }
 }

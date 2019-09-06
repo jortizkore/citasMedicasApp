@@ -14,18 +14,19 @@ namespace EmailReminderAgent.email
     {
         private MailMessage sender;
         
-        public void SendMail(string to, string cc, string body)
+        public void SendMail(string to, string body)
         {
             var SmtpServerHost = ConfigurationSettings.AppSettings["SmtpServerHost"];
             var SmtpServerPort = int.Parse(ConfigurationSettings.AppSettings["SmtpServerPort"]);
             var SmtpServerUserName = ConfigurationSettings.AppSettings["SmtpServerUserName"];
             var SmtpServerPassword = ConfigurationSettings.AppSettings["SmtpServerPassword"];
+            var CorreoDelCentro = ConfigurationSettings.AppSettings["CorreoCentro"];
 
             sender = new MailMessage();
             sender.SubjectEncoding = Encoding.UTF8;
             sender.BodyEncoding = Encoding.UTF8;
             sender.To.Add(to);
-            sender.CC.Add(cc);
+            sender.CC.Add(CorreoDelCentro);
             
 
             sender.Subject = "TEST SUBJECT";

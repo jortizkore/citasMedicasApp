@@ -85,13 +85,13 @@
             this.citasToolStripMenuItem.Name = "citasToolStripMenuItem";
             this.citasToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.citasToolStripMenuItem.Text = "Citas";
+            this.citasToolStripMenuItem.Click += new System.EventHandler(this.citasToolStripMenuItem_Click);
             // 
             // verCitasToolStripMenuItem
             // 
             this.verCitasToolStripMenuItem.Name = "verCitasToolStripMenuItem";
-            this.verCitasToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.verCitasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.verCitasToolStripMenuItem.Text = "Crear citas";
-            this.verCitasToolStripMenuItem.Click += new System.EventHandler(this.verCitasToolStripMenuItem_Click);
             // 
             // listBox1
             // 

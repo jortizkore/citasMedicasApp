@@ -1,0 +1,12 @@
+D:\Projects\Citas Medicas\EmailReminderAgent\bin\Debug\EmailReminderAgent.exe.config
+D:\Projects\Citas Medicas\EmailReminderAgent\bin\Debug\EmailReminderAgent.exe
+D:\Projects\Citas Medicas\EmailReminderAgent\bin\Debug\EmailReminderAgent.pdb
+D:\Projects\Citas Medicas\EmailReminderAgent\bin\Debug\WindowsFormsApp1.exe
+D:\Projects\Citas Medicas\EmailReminderAgent\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Citas Medicas\EmailReminderAgent\bin\Debug\WindowsFormsApp1.pdb
+D:\Projects\Citas Medicas\EmailReminderAgent\bin\Debug\WindowsFormsApp1.exe.config
+D:\Projects\Citas Medicas\EmailReminderAgent\obj\Debug\EmailReminderAgent.csprojAssemblyReference.cache
+D:\Projects\Citas Medicas\EmailReminderAgent\obj\Debug\EmailReminderAgent.csproj.CoreCompileInputs.cache
+D:\Projects\Citas Medicas\EmailReminderAgent\obj\Debug\EmailReminderAgent.csproj.CopyComplete
+D:\Projects\Citas Medicas\EmailReminderAgent\obj\Debug\EmailReminderAgent.exe
+D:\Projects\Citas Medicas\EmailReminderAgent\obj\Debug\EmailReminderAgent.pdb
