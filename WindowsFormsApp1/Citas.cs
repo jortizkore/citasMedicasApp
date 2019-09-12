@@ -16,12 +16,21 @@ namespace WindowsFormsApp1
         public int MotivoCita { get; set; }
         public string Comentario { get; set; }
 
+        public Citas()
+        {
+        }
+        public Citas(Cliente cli)
+        {
+            MessageManager.InfoMessage("Oh, mi cliente es " + cli.Nombre);
+        }
+
+
         public bool Guardar()
         {
             db = new DBConexion();
             var query = "INSERT INTO citas (NoCedula, FechaCita, MotivoCita, ComentarioMedico)" +
                         $" VALUES ('{NoCedula}','{FechaCita.Date}',{MotivoCita},'{Comentario}')";
-            
+
             return db.ExcecuteQuery(query);
         }
 
@@ -31,13 +40,13 @@ namespace WindowsFormsApp1
             var query = $"update citas set " +
                 $" FechaCita = '{FechaCita.Date}', ComentarioMedico = '{Comentario}' " +
                 $" where NoCedula = '{NoCedula}' AND MotivoCita = {MotivoCita} ";
-            
+
             return db.ExcecuteQuery(query);
         }
         public bool Eliminar()
         {
             db = new DBConexion();
-            var query = $"DELECTE FROM citas " +
+            var query = $"DELETE FROM citas " +
                 $"where NoCedula = '{NoCedula}' and FechaCita = '{FechaCita}'";
             return db.ExcecuteQuery(query);
         }
@@ -53,6 +62,13 @@ namespace WindowsFormsApp1
         {
             db = new DBConexion();
             var query = $"Select * from citas WHERE cliente='{cedula}'";
+            return db.BringData(query);
+        }
+
+        public DataTable TraerCitasPorfecha(string fecha)
+        {
+            db = new DBConexion();
+            var query = $"Select * from citas WHERE FechaCita='{fecha}'";
             return db.BringData(query);
         }
     }

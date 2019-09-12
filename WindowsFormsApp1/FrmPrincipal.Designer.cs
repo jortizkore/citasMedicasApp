@@ -34,11 +34,12 @@
             this.motivoCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verCitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbMostrarTurnos = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtFiltroClientePrincipal = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.grdBuscarClientesPrincipal = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdBuscarClientesPrincipal)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +51,7 @@
             this.citasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(724, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(629, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,16 +91,16 @@
             // verCitasToolStripMenuItem
             // 
             this.verCitasToolStripMenuItem.Name = "verCitasToolStripMenuItem";
-            this.verCitasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verCitasToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.verCitasToolStripMenuItem.Text = "Crear citas";
             // 
-            // listBox1
+            // lbMostrarTurnos
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 59);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(253, 225);
-            this.listBox1.TabIndex = 1;
+            this.lbMostrarTurnos.FormattingEnabled = true;
+            this.lbMostrarTurnos.Location = new System.Drawing.Point(12, 59);
+            this.lbMostrarTurnos.Name = "lbMostrarTurnos";
+            this.lbMostrarTurnos.Size = new System.Drawing.Size(253, 225);
+            this.lbMostrarTurnos.TabIndex = 1;
             // 
             // label1
             // 
@@ -113,15 +114,16 @@
             // 
             // TxtFiltroClientePrincipal
             // 
-            this.TxtFiltroClientePrincipal.Location = new System.Drawing.Point(392, 59);
+            this.TxtFiltroClientePrincipal.Location = new System.Drawing.Point(302, 59);
             this.TxtFiltroClientePrincipal.Name = "TxtFiltroClientePrincipal";
             this.TxtFiltroClientePrincipal.Size = new System.Drawing.Size(320, 20);
             this.TxtFiltroClientePrincipal.TabIndex = 3;
+            this.TxtFiltroClientePrincipal.TextChanged += new System.EventHandler(this.TxtFiltroClientePrincipal_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(389, 43);
+            this.label2.Location = new System.Drawing.Point(299, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 2;
@@ -132,25 +134,41 @@
             // 
             this.grdBuscarClientesPrincipal.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.grdBuscarClientesPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdBuscarClientesPrincipal.Location = new System.Drawing.Point(392, 85);
+            this.grdBuscarClientesPrincipal.Location = new System.Drawing.Point(302, 85);
+            this.grdBuscarClientesPrincipal.MultiSelect = false;
             this.grdBuscarClientesPrincipal.Name = "grdBuscarClientesPrincipal";
+            this.grdBuscarClientesPrincipal.ReadOnly = true;
+            this.grdBuscarClientesPrincipal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdBuscarClientesPrincipal.Size = new System.Drawing.Size(320, 150);
             this.grdBuscarClientesPrincipal.TabIndex = 4;
+            this.grdBuscarClientesPrincipal.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdBuscarClientesPrincipal_CellDoubleClick);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(498, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 41);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Actualizar Lista";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 297);
+            this.ClientSize = new System.Drawing.Size(629, 297);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.grdBuscarClientesPrincipal);
             this.Controls.Add(this.TxtFiltroClientePrincipal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbMostrarTurnos);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmPrincipal";
             this.Text = "Principal";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdBuscarClientesPrincipal)).EndInit();
@@ -167,11 +185,12 @@
         private System.Windows.Forms.ToolStripMenuItem motivoCitasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem citasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verCitasToolStripMenuItem;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbMostrarTurnos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtFiltroClientePrincipal;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView grdBuscarClientesPrincipal;
+        private System.Windows.Forms.Button button1;
     }
 }
 

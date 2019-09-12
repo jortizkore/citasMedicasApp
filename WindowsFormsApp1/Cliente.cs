@@ -19,6 +19,13 @@ namespace WindowsFormsApp1
         public DateTime FechaNacimiento { get; set; }
         public string Direccion { get; set; }
 
+        public Cliente() { }
+        public Cliente(string cedula)
+        {
+            this.NoCedula = cedula;
+            this.Llenar();
+        }
+
         public bool Guardar()
         {
             db = new DBConexion();
@@ -59,12 +66,26 @@ namespace WindowsFormsApp1
             }
             return false;
         }
-     public DataTable TraerClientesTabla()
+
+        public DataTable TraerClientesTabla()
         {
             db = new DBConexion();
             var query = "Select * from Cliente";
             return db.BringData(query);
         }
+
+        public DataTable TraerClientesTabla(string filtro)
+        {
+            db = new DBConexion();
+            if(filtro == "" || filtro == string.Empty)
+            {
+                return new DataTable();
+            }
+            var query = $"Select Nombre, Apellido from Cliente where NoCedula like '%{filtro}%' OR " +
+                        $"Nombre like '%{filtro}%' OR Apellido like '%{filtro}%'";
+            return db.BringData(query);
+        }
+
         public bool Llenar()
         {
             db = new DBConexion();

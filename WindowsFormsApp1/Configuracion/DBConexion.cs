@@ -37,6 +37,7 @@ namespace WindowsFormsApp1.Configuracion
         {
             this.command.CommandType = CommandType.Text;
             this.command.CommandText = query;
+            this.table = new DataTable();
 
             if (this.connect())
             {
@@ -76,10 +77,11 @@ namespace WindowsFormsApp1.Configuracion
                 this.connection.Open();
                 return true;
             }
-            catch (Exception es)
+            catch (Exception )
             {
-                throw es;
+                Disconnect();
             };
+            return false;
         }
 
         public void Disconnect()

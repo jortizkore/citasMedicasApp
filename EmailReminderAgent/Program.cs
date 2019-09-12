@@ -59,7 +59,7 @@ namespace EmailReminderAgent
                         var send = DiasParaEnviarMails.Split(',').Any(d => d == diasRestantes.ToString());
                         if (send)
                         {
-                            //mailsSender.SendMail(cli.Email, CrearCuerpoCorreo(cli, cita));
+                            // mailsSender.SendMail(cli.Email, CrearCuerpoCorreo(cli, cita));
                         }
                     }
                 }
